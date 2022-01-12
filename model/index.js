@@ -8,7 +8,8 @@ const dbOptions = {
   useNewUrlParser: true,
 }
 const Expense = require('./expense')
-const models = {Expense}
+const User = require('./user')
+const models = {Expense, User}
 
 const connectDB = () => {
   return mongoose.connect('mongodb://localhost:27017/expenseTracker', dbOptions);
